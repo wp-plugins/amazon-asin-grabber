@@ -50,7 +50,20 @@ function sgt_ag_graburl($url,$page)
 			}
 		}	
 	}
-	$retval='<h2>Result : </h2><table><tr><td>Grab :</td><td>'.$cnt.' Asin</td></tr><tr><td colspan=2><textarea style="float:left;" rows="20" cols="12">'.$asin_area.'</textarea></td></tr></table><button onclick="history.go(-1);">Grab More </button><br/> * If you need tutorial how to create this plugin visit my site <a href="http://seegatesite.com" target="_blank">Seegatesite</a>';
+	$retval='<h2>Result : </h2><table><tr><td>Grab :</td><td>'.$cnt.' Asin</td></tr><tr><td colspan=2><textarea style="float:left;" rows="20" cols="15">'.$asin_area.'</textarea></td></tr></table><button onclick="history.go(-1);">Grab More </button><br/> * If you need tutorial how to create this plugin visit my site <a href="http://seegatesite.com" target="_blank">Seegatesite</a><table></table><tr>
+        	<td colspan="2" align="center"><h3>Did you like this plugin? if you can, donate to developers :) </h3></td>
+        </tr>
+       <tr>
+        	<td colspan="2" align="center">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="YHYXZU32A6QQC">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+            </td>
+        </tr>';
 	return $retval;
 }
 function sgt_ag_fread_url($url,$ref="")
